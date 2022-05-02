@@ -1,0 +1,27 @@
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--main-color);
+    padding: 15px;
+    height: 65px;
+    box-shadow: 0 -5px 25px var(--aux-color-1);
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+footer p{
+    margin-top: 10px;
+    color: var(--text-color-1);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--text-color-1);
+}
+
+footer a:hover{
+    color: var(--side-color);
+}

@@ -1,0 +1,61 @@
+header{
+    background-color: var(--main-color);
+    padding: 20px;
+    height: 70px;
+    box-shadow: 0 0 25px var(--aux-color-1);
+}
+
+.caixa{
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.logo img{
+    width: 100px;
+    margin-right: 50px;
+}
+
+.logo img:hover{
+    opacity: 0.75;
+}
+
+.logo h1{
+    margin: auto 0;
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--text-color-1);
+    margin-right: 150px;
+}
+
+.logo h1:hover{
+    color: var(--side-color);
+}
+
+#btn-darkmode{
+    margin: auto 0;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    height: 30px;
+    background-color: var(--text-color-1);
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 0.7em;
+    cursor: pointer;
+    color: var(--main-color);
+    transition: 0.3s;
+}
+
+#btn-darkmode:hover{
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: #fff 0 0 0 1px;
+}

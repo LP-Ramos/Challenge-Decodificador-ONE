@@ -1,0 +1,14 @@
+/* global */
+@import url("./global.css");
+
+/* cores */
+@import url("./color.css");
+
+/* Cabeçalho */
+@import url("./header.css");
+
+/* Principal */
+@import url("./main.css");
+
+/* Rodapé */
+@import url("./footer.css");

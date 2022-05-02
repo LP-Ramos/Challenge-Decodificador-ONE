@@ -1,0 +1,121 @@
+main{
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Area de entrada */
+.area-entrada{
+    width: 60%;
+    margin: 25px auto;
+    padding: 5px;
+}
+
+.area-entrada textarea{
+    background-color: var(--aux-color-3);
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--aux-color-1);
+    border-color: var(--main-color);
+    padding: 10px;
+    width: 96%;
+    height: 300px;
+    resize: none;
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--text-color-2);
+}
+
+.area-entrada textarea:hover{
+    box-shadow: 0 0 15px var(--side-color);
+}
+
+.area-aviso{
+    color: var(--text-color-2);
+    display: flex;
+}
+
+.area-aviso img{
+    width: 20px;
+}
+
+.area-aviso p{
+    margin: auto 0;
+    opacity: 0.75;
+}
+
+.area-botoes{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.botoes{
+    width: 45%;
+    height: 40px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: var(--text-color-1);
+    transition: 0.3s;
+}
+
+#btn-descriptografar{
+    background-color: var(--aux-color-1);
+}
+
+#btn-descriptografar:hover{
+    background-color: var(--side-color);
+}
+
+.botoes:hover{
+    background-color: var(--side-color);
+    box-shadow: 0 0 15px var(--side-color);
+}
+
+/* Area de resultado */
+.area-resultado{
+    width: 30%;
+    margin: 40px 0;
+    background-color: var(--aux-color-3);
+    border: var(--main-color) solid 1px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 15px var(--aux-color-1);
+}
+
+.area-resultado:hover{
+    box-shadow: 0 0 15px var(--side-color);
+}
+
+.area-resultado img{
+    width: 60%;
+    margin-left: 0;
+
+}
+
+.area-resultado p{
+    margin: 10px 0;
+    vertical-align: bottom;
+}
+
+.area-resultado p:nth-child(2){
+    font-weight: bold;
+    font-size: 1.5em;
+    color: var(--main-color);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.area-resultado p:last-child{
+    color: var(--text-color-2);
+    text-align: center;
+}

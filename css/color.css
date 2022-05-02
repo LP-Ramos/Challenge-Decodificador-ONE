@@ -1,0 +1,19 @@
+body{
+    --main-color: #2956aa;
+    --side-color: #ff5d5d;
+    --aux-color-1: #2f7cff;
+    --aux-color-2: #b4cfff;
+    --aux-color-3: #d4e2fc;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
+
+.dark-mode{
+    --main-color: #252525;
+    --side-color: #72d8ff;
+    --aux-color-1: #4d4d4d;
+    --aux-color-2: #9e9e9e;
+    --aux-color-3: #d3d3d3;
+    --text-color-1: #ffffff;
+    --text-color-2: #000000;
+}
