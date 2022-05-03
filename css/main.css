@@ -96,7 +96,7 @@ main{
     box-shadow: 0 0 15px var(--side-color);
 }
 
-.area-resultado img{
+.lupa{
     width: 60%;
     margin-left: 0;
 
@@ -107,7 +107,7 @@ main{
     vertical-align: bottom;
 }
 
-.area-resultado p:nth-child(2){
+.resultado-titulo{
     font-weight: bold;
     font-size: 1.5em;
     color: var(--main-color);
@@ -115,7 +115,47 @@ main{
     margin-top: 30px;
 }
 
-.area-resultado p:last-child{
+.resultado-descricao{
     color: var(--text-color-2);
     text-align: center;
+}
+
+.p-titulo-resultado{
+    font-weight: bold;
+    font-size: 1.7em;
+    color: var(--main-color);
+    text-align: center;
+    margin-top: 30px;
+}
+
+.img-resultado{
+    width: 40%;
+}
+
+.textarea-resultado{
+    color: var(--text-color-2);
+    text-align: center;
+    resize: none;
+    font-size: 1.5em;
+    width: 90%;
+    height: 150px;
+    border-radius: 5px;
+    background-color: var(--aux-color-2);
+}
+
+.btn-copiar{
+    width: 30%;
+    height: 30px;
+    background-color: var(--aux-color-1);
+    border-radius: 5px;
+    margin-top: 10px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-color-1);
+}
+
+.btn-copiar:hover{
+    background-color: var(--side-color);
+    box-shadow: 0 0 15px var(--side-color);
 }

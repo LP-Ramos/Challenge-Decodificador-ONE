@@ -19,8 +19,12 @@
     <header>
         <div class="caixa">
             <div class="logo">
-                <img src="./img/logo.png" alt="Logo de uma chave conceitual de criptografia">
-                <h1>Decodificador de Texto</h1>
+                <a href="index.html">
+                    <img src="./img/logo.png" alt="Logo de uma chave conceitual de criptografia">
+                </a>
+                <a href="index.html">
+                    <h1>Decodificador de Texto</h1>
+                </a>
             </div>
             <button id="btn-darkmode">MODO NOTURNO</button>
         </div>
@@ -28,7 +32,7 @@
     
     <main>
         <div class="area-entrada">
-            <textarea placeholder="Digite aqui o seu texto..."></textarea>
+            <textarea id="campo-texto" placeholder="Digite aqui o seu texto..."></textarea>
             
             <div class="area-aviso">
                 <img src="./img/icon.png" alt="Ícone com uma exclamação">
@@ -41,10 +45,10 @@
             </div>
         </div>
 
-        <div class="area-resultado">
+        <div id="area-resultado" class="area-resultado">
             <img id="lupa" class="lupa" src="./img/lupa.png" alt="Ícone de uma lupa">
-            <p>Nenhuma mensagem encontrada!</p>
-            <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+            <p class="resultado-titulo">Nenhuma mensagem encontrada!</p>
+            <p class="resultado-descricao">Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>
     </main>
 
@@ -54,5 +58,7 @@
 
     <script src="./script/darkMode.js"></script>
     <script src="./script/script.js"></script>
+    <script src="./script/functions.js"></script>
+
 </body>
 </html>

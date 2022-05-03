@@ -19,7 +19,6 @@ header{
 
 .logo img{
     width: 100px;
-    margin-right: 50px;
 }
 
 .logo img:hover{
@@ -27,7 +26,6 @@ header{
 }
 
 .logo h1{
-    margin: auto 0;
     font-size: 2em;
     font-weight: bold;
     color: var(--text-color-1);
@@ -36,6 +34,12 @@ header{
 
 .logo h1:hover{
     color: var(--side-color);
+}
+
+.logo a{
+    text-decoration: none;
+    margin: auto 0;
+    margin-right: 40px;
 }
 
 #btn-darkmode{
