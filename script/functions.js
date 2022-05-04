@@ -16,8 +16,12 @@ function executar(modo) {
     btnCopiar.classList.add("btn-copiar");
     btnCopiar.addEventListener("click", copiarTexto);
 
-    if(modo == 'criptografar') {
-        if(criptografar(texto)) {
+    // Verifica se o texto só contém letras minúsculas de a-z
+    var verificaTexto = new RegExp("[a-z]", "gs");
+    if(verificaTexto.test(texto)) {
+
+        // Verifica se o modo vai ser criptografar e executa
+        if(modo == 'criptografar') {
             pTituloResultado.textContent = "Texto criptografado com sucesso!";
         
             if(document.body.classList.contains('dark-mode')) {
@@ -34,15 +38,11 @@ function executar(modo) {
             areaResultado.appendChild(imgResultado);
             areaResultado.appendChild(textAreaResultado);
             areaResultado.appendChild(btnCopiar);
+
+        // Se não for, executa descriptografar    
         } else {
-            pTituloResultado.textContent = "Digite um texto para ser criptografado!";
-            areaResultado.appendChild(pTituloResultado);
-            areaResultado.appendChild(imgResultado);
-        }
-    } else {
-        if(descriptografar(texto)) {
             pTituloResultado.textContent = "Texto descriptografado com sucesso!";
-        
+            
             if(document.body.classList.contains('dark-mode')) {
                 imgResultado.src = "img/resultado2.png";
             } else {
@@ -57,22 +57,19 @@ function executar(modo) {
             areaResultado.appendChild(imgResultado);
             areaResultado.appendChild(textAreaResultado);
             areaResultado.appendChild(btnCopiar);
-        } else {
-            pTituloResultado.textContent = "Digite um texto para ser descriptografado!";
-            areaResultado.appendChild(pTituloResultado);
-            areaResultado.appendChild(imgResultado);
         }
+
+    // Se não forem apenas minúsculas, exibe mensagem de erro    
+    } else {
+        areaResultado.appendChild(imgResultado);
+        pTituloResultado.textContent = "Por favor, utilize somente letras minúsculas e sem acento!";
+        areaResultado.appendChild(pTituloResultado);
     }
 }
-
 
 function criptografar(texto) {
     var criptografar = texto.split("");
     var textoCriptografado = "";
-
-    if(criptografar == "" || criptografar == " ") {
-        return false;
-    }
 
     criptografar.forEach(function(letra) {
         if(letra == "a") {
@@ -103,12 +100,8 @@ function descriptografar(texto) {
     var descriptografar = texto;
     var textoDescriptografado = [];
 
-    if(descriptografar == "" || descriptografar == " ") {
-        return false;
-    }
-
     if(!descriptografar.includes("ai") && !descriptografar.includes("enter") && !descriptografar.includes("imes") && !descriptografar.includes("ober") && !descriptografar.includes("ufat")) {
-        return false;
+        textoDescriptografado = texto;
     }
     
     if(descriptografarA.exec(descriptografar)) {
