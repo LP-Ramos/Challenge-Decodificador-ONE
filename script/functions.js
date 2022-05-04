@@ -136,4 +136,7 @@ function copiarTexto() {
     var texto = document.querySelector('.textarea-resultado');
     texto.select();
     document.execCommand('copy');
+
+    // Caso queiramos que apareça o texto já colado no campo
+    // campoTexto.value = texto.value;
 }
